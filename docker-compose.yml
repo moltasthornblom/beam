@@ -1,9 +1,6 @@
 services:
   app:
-    image: beam:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: moltasthornblom/beam
     ports:
       - "3000:3000"
     environment:
