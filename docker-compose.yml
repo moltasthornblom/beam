@@ -1,0 +1,19 @@
+services:
+  app:
+    image: beam:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_DB_URI=mongodb_uri
+      - JWT_SECRET_KEY=jwt_secret_key
+      - DEFAULT_USERNAME=default_username
+      - DEFAULT_PASSWORD=default_password
+      - BASE_URL=base_url
+    volumes:
+      - uploads:/usr/src/app/uploads
+
+volumes:
+  uploads:

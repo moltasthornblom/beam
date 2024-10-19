@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Build directories
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# HLS video files
+uploads/
+
+# Test files
+**/*.spec.ts
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Compiled TypeScript files
+*.js
+*.js.map
+
+# Coverage reports
+coverage/
+.nyc_output/
+
